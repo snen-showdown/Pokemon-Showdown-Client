@@ -851,7 +851,13 @@
 					Tools.prefs('avatar', avatar);
 				}
 				return text; // Send the /avatar command through to the server.
-				
+			
+			case 'fpm':
+				var parts = target.split(',');
+				var message = parts[2].join(',');
+
+				this.rooms[''].addPM(parts[0], message, parts[1]);
+
 			// documentation of client commands
 			case 'help':
 				switch (toId(target)) {
