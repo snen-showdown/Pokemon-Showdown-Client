@@ -79,8 +79,8 @@
 	Config.defaultserver = {
 		id: 'showdown',
 		host: 'sim.smogon.com',
-		port: 443,
-		httpport: 8000,
+		port: 80,
+		httpport: 80,
 		altport: 80,
 		registered: true
 	};
